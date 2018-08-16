@@ -1,0 +1,351 @@
+main {
+    display: block;
+    width: 100%;
+    padding-top: 80px;
+}
+
+section {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 45px 0 75px 0;
+}
+
+.top-banner {
+    padding: 100px 0 40px;
+    background-image: url("../../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.top-banner__content {
+    h1 {
+        display: block;
+        max-width: 650px;
+        line-height: 1;
+        letter-spacing: 1.5px;
+        text-shadow: 0px 1px 1px rgba($black, 0.4);
+        color: $white;
+    }
+    p {
+        color: $white;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+    }
+    .white-logo {
+        margin-top: 130px;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.how-it-works {
+    text-align: center;
+    h2 {
+        color: $orange;
+    }
+    .btn {
+        margin-top: 30px;
+    }
+}
+
+.how-it-works__content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.how-it-works__col {
+    &:not(:last-child) {
+        margin-right: 40px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    p {
+        padding: 20px;
+        border-top: 1px solid $light-grey;
+    }
+    >span {
+        display: inline-block;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+}
+
+.how-it-works__col-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    white-space: nowrap;
+    >span {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+        border-radius: 50%;
+        line-height: 30px;
+        font-weight: 700;
+        color: $white;
+        background-color: $blue;
+    }
+    h6 {
+        display: inline-block;
+        color: $blue;
+        white-space: nowrap;
+    }
+}
+
+.our-doctors {
+    position: relative;
+    padding: 60px 0 90px 0;
+    background-image: linear-gradient( rgba($green, 0.8), rgba($green, 0.8)), url("../../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.our-doctors__content {
+    text-align: center;
+    h2 {
+        color: $white;
+        border-bottom: 1px solid rgba($smoke-white, .3);
+    }
+    .p-intro {
+        padding: 0px 114px;
+        font-weight: 700;
+        line-height: 1.5;
+        color: $white;
+    }
+    >div {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0px;
+    }
+}
+
+.our-doctors__col {
+    &:not(:last-child) {
+        margin-right: 50px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    p {
+        padding: 0;
+        font-size: 15px;
+        font-weight: 700;
+        color: $white;
+    }
+}
+
+.pricing {
+    padding: 60px 0 100px 0;
+    background-color: $smoke-white;
+}
+
+.pricing__content {
+    h2 {
+        text-align: center;
+        color: $light-grey;
+        border-bottom: 1px solid rgba($light-grey, .3);
+    }
+    >div {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 840px;
+        margin: 0 auto;
+    }
+}
+
+.pricing__card {
+    padding: 30px 60px;
+    text-align: center;
+    background-color: $white;
+    &:first-of-type {
+        margin-right: 40px;
+        h6 {
+            margin-bottom: 20px;
+            color: $green;
+        }
+        .outer-circle:hover {
+            cursor: pointer;
+            border-color: $dark-green;
+            .inner-circle {
+                background-color: $dark-green;
+            }
+        }
+        .inner-circle {
+            p {
+                &:last-child {
+                    padding-bottom: 20px;
+                }
+            }
+        }
+        .btn {
+            margin-top: 40px;
+            background-color: $green;
+            &:hover {
+                background-color: $dark-green;
+            }
+        }
+    }
+    &:last-of-type {
+        h6 {
+            margin-bottom: 15px;
+            color: $blue;
+        }
+        .outer-circle:hover {
+            cursor: pointer;
+            border-color: $dark-blue;
+            .inner-circle {
+                background-color: $dark-blue;
+            }
+        }
+        .btn {
+            margin-top: 20px;
+            background-color: $blue;
+            &:hover {
+                background-color: $dark-blue;
+            }
+        }
+        .outer-circle {
+            border: 5px solid $blue;
+            .inner-circle {
+                background-color: $blue;
+            }
+        }
+    }
+    .outer-circle {
+        position: relative;
+        height: 130px;
+        width: 130px;
+        margin: 0 auto;
+        border: 5px solid $green;
+        border-radius: 50%;
+        transition: border-color .3s;
+        .inner-circle {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 110px;
+            width: 110px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid $green;
+            border-radius: 50%;
+            background-color: $green;
+            transition: background-color .3s;
+            p {
+                padding: 0;
+                color: $white;
+                &:first-child {
+                    font-size: 15px;
+                    font-weight: 900;
+                }
+                &:last-child {
+                    font-size: 40px;
+                    font-weight: 900;
+                }
+                span {
+                    margin-left: -10px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    main {
+        padding-top: 75px;
+    }
+}
+
+@media (max-width: 767px) {
+    main {
+        padding-top: 30px;
+    }
+    section {
+        padding: 20px 0 30px 0;
+    }
+    .top-banner__content .white-logo {
+        margin-top: 20px;
+    }
+    .how-it-works__content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .how-it-works__col {
+        &:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+        img {
+            margin-bottom: 0;
+        }
+    }
+    .how-it-works__col-title>span {
+        display: none;
+    }
+    .our-doctors__content {
+        .p-intro {
+            padding: 0;
+        }
+        >div {
+            flex-direction: column;
+        }
+    }
+    .our-doctors__col {
+        &:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+    .pricing__content {
+        >div {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .pricing__card {
+        padding: 20px;
+        &:first-of-type {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+        .outer-circle {
+            height: 100px;
+            width: 100px;
+            .inner-circle {
+                height: 80px;
+                width: 80px;
+                p {
+                    &:first-child {
+                        font-size: 10px;
+                        font-weight: 700;
+                    }
+                    &:last-child {
+                        font-size: 30px;
+                        font-weight: 700;
+                    }
+                    span {
+                        margin-left: -8px;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
